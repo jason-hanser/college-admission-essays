@@ -40,7 +40,7 @@ To identify the number of topics to model, I assessed the fit of each model by c
 However, as you can see below, perplexity steadily decreased as the number of topics increased without ever "bottoming-out." In hindsight, this was probably a predictable result, since applicants aren't really restricted in terms of what about they can write. But, modelling 150 topics --- or more --- isn't practical for a number of reasons. With such a large number of topics, the topics are extremely nuanced and too refined to helpful. Moreover, the sample size for any given topic is too small for any meaningful analysis with such a large number of topics. 
 
 
-``` {r echo = FALSE, message = FALSE, fig.width = 9, fig.height = 3, fig.align = "center"}
+``` {r echo = FALSE, message = FALSE, fig.width = 9, fig.height = 3, fig.align = "center", warning = FALSE}
 
 library(dplyr)
 library(tidyr)
@@ -79,7 +79,7 @@ Finally, the results of the topic modelling process were combined with data from
 
 ### Results: Topic 5
 
-Topic 5 centered on applicants’ experiences with the natural world. The figure below (left) shows the keywords most closely associated with Topic 5. Examples include essays about hiking through forests, spending the summer at a lakeside cabin, and learning to appreciate nature while golfing. Not surprisingly, applicants who wrote about Topic 5 were twice as likely to indicate Environmental Studies as an intended major (10.8% vs 5.1%).  
+Topic 5 centered on applicants’ experiences with the natural world. The figure below (left) shows the keywords most closely associated with Topic 5. Examples of Topic 5 essays include essays about hiking through forests, spending the summer at a lakeside cabin, and learning to appreciate nature while golfing. Not surprisingly, applicants who wrote about Topic 5 were twice as likely to indicate Environmental Studies as an intended major (10.8% vs 5.1%).  
  
 Applicants who wrote about Topic 5 enrolled at a rate of 18.4% compared to 15.0% for students who did not write about Topic 5 (center), though this difference was not significant after controlling for sex, race, residency, and high school GPA. Similarly, we found no evidence that students interested in any particular major were more likely to enroll if they wrote about Topic 5.  
  
@@ -93,13 +93,15 @@ include_graphics("data & figures//topic_5_panel.png")
 
 ```
 
+NOTE: Normally, I detest using word clouds for [lots](https://www.niemanlab.org/2011/10/word-clouds-considered-harmful/) [of](https://getthematic.com/insights/word-clouds-harm-insights/) [reasons](https://towardsdatascience.com/word-clouds-are-lame-263d9cbc49b7), but this is one of the few cases where they are useful. 
+
 Together, these results suggest that these applicants are ideal prospects for Eckerd College. While financial incentives (e.g. scholarship funds) represent a possible method for luring these students to Eckerd College, a less costly strategy could involve the use of targeted marketing materials. Digital and/or printed promotional materials could be designed specifically for students who write about their experiences with nature. Such materials could highlight the diverse ecosystems of Florida and extoll the Environmental Studies program as well as relevant campus activities at Eckerd College (e.g. overnight kayaking trips offered through the waterfront).  
 
 ### Final Remarks
 
 For the sake of brevity, I only presented the results for one of the thirty topics that I identified during this project. However, the results above demonstrate the types of analyses done for each of the thirty topics as well as the potential significance of the results. 
 
-To date, we’ve identified a handful of topics themes with interesting relationships --- or lack thereof --- with yield and/or retention, including essays about travel & culture exchange, social justice, and the environment and climate change. Going forward, we hope to work with admissions and marketing to design marketing materials that can be Ab/B tested and used in targeted marketing campaigns.
+To date, we’ve identified roughly a dozen topics themes with interesting relationships --- or lack thereof --- with yield and/or retention, including essays about travel & culture exchange, social justice, and the environment and climate change. Going forward, we hope to work with admissions and marketing to design marketing materials that can be Ab/B tested and used in targeted marketing campaigns.
 
 Because of FERPA, the data for this project --- including the college essays --- cannot be shared. That said, the R code for the initial topic modelling can be found [here](https://github.com/jason-hanser/college-admission-essays).
 
