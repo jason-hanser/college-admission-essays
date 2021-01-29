@@ -101,7 +101,7 @@ Together, these results suggest that these applicants are ideal prospects for Ec
 
 For the sake of brevity, I only presented the results for one of the thirty topics that I identified during this project. However, the results above demonstrate the types of analyses done for each of the thirty topics as well as the potential significance of the results. 
 
-To date, we’ve identified roughly a dozen topics themes with interesting relationships --- or lack thereof --- with yield and/or retention, including essays about travel & culture exchange, social justice, and the environment and climate change. Going forward, we hope to work with admissions and marketing to design marketing materials that can be Ab/B tested and used in targeted marketing campaigns.
+To date, we’ve identified roughly a dozen topics themes with interesting relationships --- or lack thereof --- with yield and/or retention, including essays about travel & culture exchange, social justice, and the environment and climate change. Going forward, we hope to work with admissions and marketing to design marketing materials that can be A/B tested and used in targeted marketing campaigns.
 
 Because of FERPA, the data for this project --- including the college essays --- cannot be shared. That said, the R code for the initial topic modelling can be found [here](https://github.com/jason-hanser/college-admission-essays).
 
